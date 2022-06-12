@@ -4,6 +4,7 @@
 // Connect to the Database 
 include('db_connect.php');
 
+
 $insert = false;
 $update = false;
 $empty = false;
@@ -105,7 +106,6 @@ else{
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <title>Add New Student | Coding Cush</title>
 
 </head>
 
@@ -349,11 +349,15 @@ else{
 		                      Action
 		                    </button>
 		                    <div class="dropdown-menu" style="">
+                          <!--
 		                      <a class="dropdown-item view_employee" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">View</a>
+                          -->
 		                      <div class="dropdown-divider"></div>
 		                      <a class="dropdown-item" href="./index.php?page=edit_employee&id=<?php echo $row['id'] ?>">Edit</a>
+                          <!--
 		                      <div class="dropdown-divider"></div>
 		                      <a class="dropdown-item delete_employee" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Delete</a>
+                          -->
 		                    </div>
 						</td>
 					</tr>	
